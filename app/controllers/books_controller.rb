@@ -6,7 +6,7 @@ class BooksController < ApplicationController
   end
 
   def create
-    book = Book.new
+    @book = Book.new
     book.save
     redirect_to index
   end
